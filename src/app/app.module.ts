@@ -6,7 +6,8 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { IntroductionComponent } from './introduction/introduction.component';
 import { SkillsComponent } from './skills/skills.component';
-
+import {ButtonModule} from 'primeng/button';
+import { RippleModule } from 'primeng/ripple';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +17,9 @@ import { SkillsComponent } from './skills/skills.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ButtonModule,
+    RippleModule
   ],
   providers: [],
   bootstrap: [AppComponent]

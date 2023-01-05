@@ -1,4 +1,5 @@
 import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
+import { PrimeNGConfig } from 'primeng/api';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +8,15 @@ import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor(private primengConfig: PrimeNGConfig) { }
+  download() {
+    const a = document.createElement('a');
+    a.href = 'assets/CV__Christian_ElHalabi.pdf';
+    a.download = 'CV_Christian_ElHalabi.pdf';
+    a.click();
+  }
+  ngOnInit(){
+    this.primengConfig.ripple = true;
   }
   // @ViewChild('googly') anchor: ElementRef | undefined;
 
