@@ -1,14 +1,14 @@
-<section class="bg-purple-800 mt-8 flex justify-content-center flex-column align-items-center">
+<section class="bg-purple-800 mt-8 flex justify-content-center flex-column align-items-center text-center">
   <img src="assets/logoWhite.png" alt="Logo" class="w-4rem mt-5">
   <p class="mt-5">Living, learning, & leveling up one day at a time.</p>
-  <div class="flex flex-row w-8 justify-content-evenly mb-8 mt-5">
-    <div class="flex flex-row">
+  <div class="flex flex-wrap md:flex-row md:w-8 justify-content-evenly mb-4 md:mb-8 mt-5">
+    <div class="flex flex-row my-1">
       <p class="text-xl mr-4 mt-3">Find me on:</p>
       <button pButton pRipple type="button" icon="pi pi-linkedin" (click)="viewLinkedIn()" class="p-button-rounded p-button-outlined m-1" style="color: white;"></button>
       <button pButton pRipple type="button" icon="pi pi-github" (click)="GitHub()" class="p-button-rounded p-button-outlined m-1" style="color: white;"></button>
       <button pButton pRipple type="button" icon="pi pi-instagram" (click)="Insta()" class="p-button-rounded p-button-outlined m-1" style="color: white;"></button>
     </div>
-    <div class="flex flex-row">
+    <div class="flex flex-row my-1">
       <p class="text-xl mr-4 mt-3">Contact me:</p>
       <button pButton pRipple type="button" icon="pi pi-envelope" (click)="sendEmail()" class="p-button-rounded p-button-outlined m-1" style="color: white;"></button>
       <button pButton pRipple type="button" icon="pi pi-phone" (click)="callNumber()" class="p-button-rounded p-button-outlined m-1" style="color: white;"></button>
