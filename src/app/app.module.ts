@@ -8,12 +8,18 @@ import { IntroductionComponent } from './introduction/introduction.component';
 import { SkillsComponent } from './skills/skills.component';
 import {ButtonModule} from 'primeng/button';
 import { RippleModule } from 'primeng/ripple';
+import { ProjectsComponent } from './projects/projects.component';
+import { FooterComponent } from './footer/footer.component';
+import { RecommendComponent } from './recommend/recommend.component';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     IntroductionComponent,
-    SkillsComponent
+    SkillsComponent,
+    ProjectsComponent,
+    FooterComponent,
+    RecommendComponent
   ],
   imports: [
     BrowserModule,
